@@ -30,7 +30,6 @@ li {
     margin-left: 3%;
     padding-right: 3%;
     border-right: 2px solid rgb(231, 223, 191);
-    font-size: 18px;
 }
 
 #last {
@@ -67,51 +66,84 @@ li > a:hover::before {
 
 body {
     margin: 0;
-    padding-bottom: 30px;
+    padding-bottom: 20px;
 }
 
-.container {
+h1 {
     text-align: center;
+    margin-top: 30px;
+}
+
+hr {
+	clear: both;
+    margin-left: 60px;
+    margin-right: 60px;
+    margin-top: 35px;
+    background-color: #C09E73;
+    height: 1px;
+    border-radius: 5px;
+}
+
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
 }
 
 article {
     border: 2px solid #C09E73;
 	border-radius: 5px;
+    /*background-color: #F0DFAD;*/
     background-color: rgb(20, 17, 17);
-	height: 200px;
-	width: 300px;
-    margin-left: auto;
-    margin-right: auto;
+    height: 400px;
+	width: 600px;
+    margin: 20px;
     padding: 10px;
+    position: relative;
+}
+
+.project_title {
+    border-bottom: 2px solid rgb(231, 223, 191);
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
+
+.date {
+    float: left;
+    width: 200px;
+}
+
+.duration {
+    float: right;
+    width: 90px;
+}
+
+h2, h3 {
     text-align: center;
-}
-
-.vline {
-    border-bottom: 2px solid #C09E73;
-    width: 300px;
-    margin: 30px auto 30px auto;
-}
-
-/*Permet de remettre à l'endroit le mail*/
-.obfusc {
-    unicode-bidi: bidi-override;
-    direction: rtl;
-}
-
-h1 {
-    font-size: 20px;
     margin: 0;
-    padding: 0
+    padding: 0;
 }
 
-.content {
-    margin-top: 60px;
+h2 {
+    min-height: 32px;
+    max-height: max-content;
 }
 
-a {
-    color: rgb(231, 223, 191);
+h3 {
+    margin-top: 15px;
+    margin-bottom: 10px;
 }
 
-a:hover {
-    color: #C09E73;
+.github {
+    position: absolute;
+    right: 15px;
+    bottom: 15px;
+}
+
+#git {
+    background-color: rgb(231, 223, 191);
+    height: 20px;
+    width: 20px;
+    border-radius: 10px;
 }
