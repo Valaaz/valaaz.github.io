@@ -71,9 +71,9 @@ body {
 .return {
   font-size: 25px;
   text-align: center;
-  margin: 0;
-  height: 0;
-  visibility: hidden;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  visibility: visible;
 }
 
 #arrow {
