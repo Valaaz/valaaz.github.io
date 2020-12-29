@@ -79,3 +79,8 @@ article:focus {
 	transform: scale(1.1);
 	box-shadow: 0 0 20px #CDBE9F inset, 0 0 20px #BEAE8C inset, 0 0 15px #b6a684;
 }
+
+.load
+{
+  background:url('../img/loader.gif') no-repeat center;
+}

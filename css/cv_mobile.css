@@ -34,3 +34,8 @@ body {
   vertical-align: middle;
   margin-bottom: 5px;
 }
+
+.load
+{
+  background:url('../img/loader.gif') no-repeat center;
+}
