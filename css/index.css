@@ -34,3 +34,41 @@ body {
   vertical-align: middle;
   margin-bottom: 5px;
 }
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+a {
+  text-decoration: none;
+  margin: 20px;
+  padding: 0;
+}
+
+article {
+  border: 2px solid #C09E73;
+	border-radius: 5px;
+  background-color: rgb(20, 17, 17);
+  height: 400px;
+  width: 600px;
+  padding: 10px;
+  color: rgb(231, 223, 191);
+  text-align: center;
+  font-size: 300%;
+  line-height: 370px;
+}
+
+.vline {
+  border-left: 2px solid #C09E73;
+  height: 400px;
+  margin: 0px 50px 0px 50px;
+}
+
+article:hover,
+article:focus {
+	transform: scale(1.1);
+	box-shadow: 0 0 20px #CDBE9F inset, 0 0 20px #BEAE8C inset, 0 0 15px #b6a684;
+}
