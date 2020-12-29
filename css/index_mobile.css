@@ -60,6 +60,10 @@ article {
   line-height: 180px;
 }
 
+p {
+  margin-top: 0;
+}
+
 .vline {
   border-bottom: 2px solid #C09E73;
   width: 300px;
