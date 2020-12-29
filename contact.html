@@ -7,20 +7,18 @@
     <title>Portfolio</title>
     <link rel="stylesheet" media="screen and (min-width:769px)" href="./css/contact.css" />
     <link rel="stylesheet" media="screen and (max-width:768px)" href="./css/contact_mobile.css" />
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
 </head>
 
 <body>
     <header>
         <div idclass="title">ME CONTACTER</div>
-        <div class="menubar">
-            <ul>
-                <li><a href="./index.html">Accueil</a></li><!--
-                --><li><a href="./realisation.html">Réalisations</a></li><!--
-                --><li><a href="./cv.html">CV</a></li><!--
-                --><li id="last"><a href="./contact.html">Me contacter</a></li>
-            </ul>
-        </div>
+        <div id="navbar"></div>
     </header>
+
+    <script>
+        $("#navbar").load("nav.html");
+    </script>
 
     <div class="container">
         <article>
