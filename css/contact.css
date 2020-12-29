@@ -26,7 +26,6 @@ body {
     justify-content: center;
     margin-left: 3%;
     margin-right: 3%;
-
 }
 
 article {
@@ -38,6 +37,7 @@ article {
     margin: 5px;
     padding: 10px;
     text-align: center;
+    word-wrap: break-word;
 }
 
 .vline {
