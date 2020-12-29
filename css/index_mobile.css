@@ -36,10 +36,7 @@ body {
 }
 
 .container {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
+  text-align: center;
 }
 
 a {
@@ -52,19 +49,21 @@ article {
   border: 2px solid #C09E73;
   border-radius: 5px;
   background-color: rgb(20, 17, 17);
-  height: 400px;
-  width: 600px;
+  height: 200px;
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
   padding: 10px;
   color: rgb(231, 223, 191);
   text-align: center;
-  font-size: 300%;
-  line-height: 370px;
+  font-size: 200%;
+  line-height: 170px;
 }
 
 .vline {
-  border-left: 2px solid #C09E73;
-  height: 400px;
-  margin: 0px 50px 0px 50px;
+  border-bottom: 2px solid #C09E73;
+  width: 200px;
+  margin: 30px auto 30px auto;
 }
 
 article:hover,
