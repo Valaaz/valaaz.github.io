@@ -20,21 +20,21 @@ body {
 }
 
 .container {
-    width: max-content;
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     align-items: center;
     justify-content: center;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 3%;
+    margin-right: 3%;
+
 }
 
 article {
     border: 2px solid #C09E73;
-	border-radius: 5px;
+    border-radius: 5px;
     background-color: rgb(20, 17, 17);
-	height: 200px;
-    width: 400px;
+    height: 200px;
+    width : 25%;
     margin: 5px;
     padding: 10px;
     text-align: center;
@@ -43,7 +43,7 @@ article {
 .vline {
     border-left: 2px solid #C09E73;
     height: 200px;
-    margin: 0px 50px 0px 50px;
+    margin: 0px auto 0px auto;
 }
 
 /*Permet de remettre à l'endroit le mail*/
