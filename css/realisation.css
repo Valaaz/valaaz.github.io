@@ -95,4 +95,14 @@ h3 {
     height: 20px;
     width: 20px;
     border-radius: 10px;
+    vertical-align: top;
+}
+
+div > a {
+    color: rgb(231, 223, 191);
+    text-decoration: none;
+}
+
+div > a:hover {
+    color: #C09E73;
 }
