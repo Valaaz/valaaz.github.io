@@ -44,10 +44,9 @@ hr {
 article {
     border: 2px solid #C09E73;
 	border-radius: 5px;
-    /*background-color: #F0DFAD;*/
     background-color: rgb(20, 17, 17);
-    height: 400px;
-	width: 600px;
+    height: fit-content;
+	width: 80%;
     margin: 20px;
     padding: 10px;
     position: relative;
@@ -61,12 +60,12 @@ article {
 
 .date {
     float: left;
-    width: 200px;
+    width: 50%;
 }
 
 .duration {
     float: right;
-    width: 90px;
+    width: 22%;
 }
 
 .objectif {
