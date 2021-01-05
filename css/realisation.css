@@ -65,6 +65,7 @@ article {
 .duration {
     float: right;
     width: 22%;
+    text-align: right;
 }
 
 h2, h3 {

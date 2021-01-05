@@ -66,6 +66,7 @@ article {
 .duration {
     float: right;
     width: 22%;
+    text-align: right;
 }
 
 .objectif {
