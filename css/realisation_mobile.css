@@ -89,10 +89,15 @@ h3 {
     margin-bottom: 10px;
 }
 
+.effective {
+    float: left;
+    width: 50%;
+}
+
 .github {
-    position: absolute;
-    right: 15px;
-    bottom: 15px;
+    float: right;
+    width: 50%;
+    text-align: right;
 }
 
 #git {
