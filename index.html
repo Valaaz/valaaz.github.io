@@ -4,50 +4,155 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>Portfolio | Accueil</title>
+    <link rel="stylesheet" media="screen and (min-width:769px)" href="./css/style.css" />
+    <link rel="stylesheet" media="screen and (max-width:769px)" href="./css/mobile.css" />
+    <link rel="icon" type="image/png" href="./images/renard.png" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@300&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
 </head>
 
 <body>
-    <div>
-        <h1>Portfolio en travaux</h1>
-    </div>
-    <div class="image"><img alt="ordi" src="ordinateur-de-bureau.png"></div>
-    <div><a href="https://valaaz.github.io/old-portfolio/" title="portfolio">Lien vers l'ancien portfolio</a></div>
-    <div style="height: 100px;"></div>
-    <div class="credits">Icônes conçues par <a href="https://www.flaticon.com/fr/auteurs/pixelmeetup"
-            title="Pixelmeetup">Pixelmeetup</a>
-        from <a href="https://www.flaticon.com/fr/" title="Flaticon">www.flaticon.com</a></div>
+    <header>
+        <div id="title">ACCUEIL</div>
+        <div id="navbar"></div>
+    </header>
+
+    <script>
+        $("#navbar").load("nav.html");
+    </script>
+
+    <section id="infos">
+        <h1>Présentation</h1>
+        <hr>
+        <div class="container">
+            <div class="vertical">
+                <div class="horizontal">
+                    <img id="photo" alt="photo de moi" src="./images/moi.jpg">
+                    <p id="presentation">Bonjour, bonsoir, je m'appelle Valentin AZANCOTH et je
+                        suis en
+                        2<sup>ème</sup> année
+                        de
+                        DUT Informatique. Je
+                        suis
+                        passionné de jeux vidéo, de mangas et d'animés ainsi que de films et séries (de la pop culture
+                        en
+                        général
+                        quoi).
+                        </br>
+                        J'aime également beaucoup l'informatique et notamment dans tout ce qui est IHM et développement
+                        d'applications.
+                    </p>
+                </div>
+
+                <div class="info">
+                    <ul>
+                        <li><b>Nom et prénom :</b> Valentin AZANCOTH</li>
+                        <li><b>Âge :</b> 19</li>
+                        <li><b>Date de naissance :</b> 25 / 06 / 2001</li>
+                        <li><b>Habite à :</b> MONDELANGE, Moselle</li>
+                    </ul>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+
+    <section id="cv">
+        <h1>CV</h1>
+        <hr>
+        <input type="checkbox" id="checkbox_cv" />
+        <label for="checkbox_cv" id="lbl_cv">Voir CV</label>
+
+        <div id="derouler" class="container">
+            <a id="lien_cv" href="./doc/CV Valentin AZANCOTH.pdf" target="_blank"><img id="photo_cv" alt="cv"
+                    title="Cliquer sur l'image pour voir le cv en pdf" src="./images/CV photo.jpg"></a>
+        </div>
+
+    </section>
+
+    <section id="contacts">
+        <h1>Contact</h1>
+        <hr>
+        <div class="container" style="margin-top: 75px;">
+            <ul id="logo">
+                <li class="li">
+                    <div class="direction">
+                        <input class="checkbox" type="checkbox" id="checkbox_mail" />
+                        <label class="lien" for="checkbox_mail" id="lbl_mail" onclick="CheckedMail()">
+                            <img class="icon" id="mail" alt="Mail" src="images/mail.png">
+                        </label>
+
+                        <div class="content marg">
+                            <a id="lien_mail" href="mailto:val.zancoth@gmail.com" target="_blank" class="obfusc">
+                                moc.liamg@htocnaz.lav
+                            </a>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="li">
+                    <div class="direction">
+                        <input class="checkbox" type="checkbox" id="checkbox_git" />
+                        <label class="lien" for="checkbox_git" id="lbl_git" onclick="CheckedGit()">
+                            <img class="icon" id="github" alt="Github" src="images/github.png">
+                        </label>
+
+                        <div class="content marg">
+                            <a id="lien_github" href="https://github.com/Valaaz" target="_blank">
+                                Valaaz
+                            </a>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="li">
+                    <div class="direction">
+                        <input class="checkbox" type="checkbox" id="checkbox_linkedin" />
+                        <label class="lien" for="checkbox_linkedin" id="lbl_lindekin" onclick="CheckedLinkedin()">
+                            <img class="icon" id="linkedin" alt="Linkedin" src="images/linkedin.png">
+                        </label>
+
+                        <div class="content">
+                            <a id="lien_linkedin" href="https://www.linkedin.com/in/valentin-azancoth-00692a198/"
+                                target="_blank">
+                                Valentin AZANCOTH
+                            </a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <script>
+        var mail = document.getElementById("checkbox_mail");
+        var git = document.getElementById("checkbox_git");
+        var linkedin = document.getElementById("checkbox_linkedin");
+
+        function CheckedMail() {
+            git.checked = false;
+            linkedin.checked = false;
+        }
+
+        function CheckedGit() {
+            mail.checked = false;
+            linkedin.checked = false;
+        }
+
+        function CheckedLinkedin() {
+            mail.checked = false;
+            git.checked = false;
+        }
+    </script>
 </body>
 
-<style>
-    div {
-        text-align: center;
-    }
+<div id="footer" style="margin-top: 100px;"></div>
 
-    a {
-        color: aquamarine;
-    }
-
-    a:hover {
-        color: darkcyan;
-    }
-
-    html,
-    body {
-        margin: 0;
-        padding: 0;
-        background-color: #012b35;
-        color: rgb(231, 223, 191);
-        text-align: center;
-    }
-
-    @media screen and (max-width:769px) {
-
-
-        img {
-            width: 40%;
-        }
-    }
-</style>
+<script>
+    $("#footer").load("footer.html");
+</script>
 
 </html>

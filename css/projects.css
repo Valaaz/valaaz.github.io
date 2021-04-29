@@ -1,0 +1,228 @@
+/*---------COLORS---------*/
+:root {
+  --font: #e7dfbf;
+  --hover: #C09E73;
+  --header: #252525;
+  --background: #012b35;
+  --border1: #9c6644;
+  --border2: #ddb892;
+}
+
+/*---------PAGE---------*/
+html {
+  font-family: 'Dosis', sans-serif;
+  color: var(--font);
+  background-color: var(--background);
+  font-size: 20px;
+  letter-spacing: 0.1em;
+  scroll-behavior: smooth;
+}
+
+header {
+  background-color: var(--header);
+  height: 130px;
+  text-align: center;
+  font-size: 40px;
+  margin-bottom: 30px;
+  padding-top: 10px;
+  box-shadow: 0 0 4px 0 #252525, 0 2px 4px #252525;
+}
+
+body {
+  margin: 0;
+}
+
+section {
+  text-align: center;
+}
+
+h1 {
+  font-family: 'Dosis', sans-serif;
+  text-align: center;
+  margin: 0;
+  font-size: 50px;
+  margin-bottom: 2%;
+  color: #eeeccf;
+}
+
+h2 {
+  text-align: center;
+  font-size: 40px;
+  margin: 0;
+}
+
+hr {
+  margin: 1% auto 2% auto;
+  border: 1px solid var(--font);
+  width: 80%;
+  transition: .5s;
+}
+
+article:hover hr {
+  width: 100%;
+}
+
+article {
+  margin-bottom: 3%;
+  width: 85%;
+  border-top: 1px solid var(--border1);
+  border-bottom: 1px solid var(--border2);
+  border-left: 1px solid var(--border1);
+  border-right: 1px solid var(--border2);
+  overflow: hidden;
+  display: inline-block;
+  position: relative;
+  transition: .5s;
+}
+
+article:before {
+  content: '';
+  background-size: 100%;
+  background-position: 50%;
+  filter: blur(5px) brightness(50%);
+  position: absolute;
+  top: 0;
+  bottom:0;
+  left: 0;
+  right: 0;
+}
+
+article:hover {
+  border-top: 1px solid var(--border2);
+  border-bottom: 1px solid var(--border1);
+  border-left: 1px solid var(--border2);
+  border-right: 1px solid var(--border1);
+}
+
+.infos {
+  padding: 1% 2% 2% 2%;
+  position: relative;
+  text-align: left;
+}
+
+#git {
+  background-color: rgb(231, 223, 191);
+  width: 40px;
+  border-radius: 50%;
+  transition: .5s;
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+}
+
+#git:hover {
+  background-color: #C09E73;
+  transform: scale(1.1);
+}
+
+.adresse {
+  color: #2ca8c7;
+}
+
+.adresse:hover {
+  color: #90d0e0;
+}
+
+#nim:before {
+  background-image: url(../images/projects/NIM.png);
+}
+
+#univos:before {
+  background-image: url(../images/projects/univos.png);
+}
+
+#vieux:before {
+  background-image: url(../images/projects/lesitedesvieux.png);
+}
+
+#netplix:before {
+  background-image: url(../images/projects/netplix.png);
+}
+
+#cpoa:before {
+  background-image: url(../images/projects/apexandco.png);
+}
+
+#web:before {
+  background-image: url(../images/projects/projetweb.png);
+}
+
+#systemes:before {
+  background-image: url(../images/projects/systemes.png);
+}
+
+#ancien_portfolio:before {
+  background-image: url(../images/projects/ancien_portfolio.png);
+}
+
+#naruto:before {
+  background-image: url(../images/projects/naruto.png);
+}
+
+#discord:before {
+  background-image: url(../images/projects/discord.png);
+}
+
+#portfolio:before {
+  background-image: url(../images/projects/portfolio.png);
+}
+
+@media screen and (min-width:769px) {
+  #gotop {
+    width: 5%;
+    max-width: 50px;
+    position: fixed;
+    right: 1%;
+    bottom: 1%;
+    transition: .4s;
+  }
+
+  #arrow {
+    width: 100%;
+  }
+
+  #gotop:hover {
+    transform: translateY(-10px);
+  }
+}
+
+@media screen and (max-width:769px) {
+  html {
+    font-size: 16px;
+  }
+
+  #gotop {
+    width: 40px;
+    position: fixed;
+    right: 5px;
+    bottom: 5px;
+    transition: .4s;
+    z-index: 1;
+  }
+  
+  #arrow {
+    width: 100%;
+  }
+  
+  #gotop:hover {
+    transform: translateY(-10px);
+  }
+
+  h1 {
+    font-size: 40px;
+  }
+
+  h2 {
+    font-size: 30px;
+  }
+
+  #git {
+    background-color: rgb(231, 223, 191);
+    width: 30px;
+    border-radius: 50%;
+    transition: .5s;
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+  }
+}
