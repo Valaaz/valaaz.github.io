@@ -126,46 +126,57 @@ article:hover {
 
 #nim:before {
   background-image: url(../images/projects/NIM.png);
+  background-size: cover;
 }
 
 #univos:before {
   background-image: url(../images/projects/univos.png);
+  background-size: cover;
 }
 
 #vieux:before {
   background-image: url(../images/projects/lesitedesvieux.png);
+  background-size: cover;
 }
 
 #netplix:before {
   background-image: url(../images/projects/netplix.png);
+  background-size: cover;
 }
 
 #cpoa:before {
   background-image: url(../images/projects/apexandco.png);
+  background-size: cover;
 }
 
 #web:before {
   background-image: url(../images/projects/projetweb.png);
+  background-size: cover;
 }
 
 #systemes:before {
   background-image: url(../images/projects/systemes.png);
+  background-size: cover;
 }
 
 #ancien_portfolio:before {
   background-image: url(../images/projects/ancien_portfolio.png);
+  background-size: cover;
 }
 
 #naruto:before {
   background-image: url(../images/projects/naruto.png);
+  background-size: cover;
 }
 
 #discord:before {
   background-image: url(../images/projects/discord.png);
+  background-size: cover;
 }
 
 #portfolio:before {
   background-image: url(../images/projects/portfolio.png);
+  background-size: cover;
 }
 
 @media screen and (min-width:769px) {
