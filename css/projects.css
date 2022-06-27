@@ -83,7 +83,7 @@ article:before {
   filter: blur(5px) brightness(50%);
   position: absolute;
   top: 0;
-  bottom:0;
+  bottom: 0;
   left: 0;
   right: 0;
 }
@@ -179,6 +179,31 @@ article:hover {
   background-size: cover;
 }
 
+#backpack:before {
+  background-image: url(../images/projects/backpack.png);
+  background-size: cover;
+}
+
+#synthese-back:before {
+  background-image: url(../images/projects/projet-synthese-back.png);
+  background-size: cover;
+}
+
+#synthese-front:before {
+  background-image: url(../images/projects/projet-synthese-front.png);
+  background-size: cover;
+}
+
+#ig:before {
+  background-image: url(../images/projects/ig.png);
+  background-size: cover;
+}
+
+#uno:before {
+  background-image: url(../images/projects/uno.png);
+  background-size: cover;
+}
+
 @media screen and (min-width:769px) {
   #gotop {
     width: 5%;
@@ -210,7 +235,7 @@ article:hover {
     bottom: 5px;
     z-index: 1;
   }
-  
+
   #arrow {
     width: 100%;
   }
