@@ -1,0 +1,29 @@
+import React from "react";
+import { Experience } from "../types/experience.type";
+
+const ExperienceCard = (experience: Experience) => {
+    return (
+        <div className="card card-side w-[90%] self-center shadow-sm bg-secondary">
+            <p className="flex justify-center items-center ml-4 w-32 text-3xl text-center flex-shrink-0">{experience.date}</p>
+            <div className="divider divider-horizontal pt-3 pb-3 flex-none"></div>
+            <div className="card-body pl-0 flex-1">
+                <div>
+                    <h2 className="card-title">{experience.title}</h2>
+                    <p className="italic">{experience.location}</p>
+                </div>
+                <div>
+                    <p className="underline">{experience.position}</p>
+                    <p>{experience.mission}</p>
+                    <ul className="list-disc ml-10">
+                        {experience.details.map((detail) => (
+                            <li>{detail}</li>
+                        ))}
+                    </ul>
+                </div>
+                <p className="font-bold">{experience.technologies.join(' - ')}</p>
+            </div>
+        </div>
+    );
+};
+
+export default ExperienceCard;

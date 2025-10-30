@@ -1,0 +1,37 @@
+[
+    {
+        "date": "04/2025 - 09/2025",
+        "title": "Stage AlloTools",
+        "location": "Ellange - Luxembourg",
+        "position": "Stagiaire dans l'équipe Front",
+        "mission": "Mise en place de structures, modules, algorithmes et architecture dans les configurateurs 3D",
+        "details": [
+            "Ajout et amélioration de composants dans la librairie maison",
+            "Ajout et amélioration dans les configurateurs",
+            "Optimisation de la librairie maison en implémentant les notions de standalone et points d'entrée (Angular)",
+            "Développement et R&D d'outils internes"
+        ],
+        "technologies": [
+            "Angular",
+            "GitHub",
+            "Docker",
+            "ClickUp"
+        ]
+    },
+    {
+        "date": "04/2023 - 07/2023",
+        "title": "Stage ERI Bancaire",
+        "location": "Gasperich - Luxembourg",
+        "position": "Stagiaire au service R&D",
+        "mission": "Ajout de pistes d'audit à un logiciel existant",
+        "details": [
+            "Gestion de logs dans différents outils de stockage"
+        ],
+        "technologies": [
+            "Java",
+            "SGBD",
+            "GitLab",
+            "Sl4j et Log4j"
+        ]
+    }
+]

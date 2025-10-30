@@ -1,6 +1,10 @@
 import * as React from "react";
+import ExperienceCard from "../components/experience-card.component";
+import SectionTitle from "../components/section-title.component";
+import experiencesData from "../data/experiences.data.json";
 import formationsData from "../data/formations.data.json";
 import portrait from "../images/portrait.jpg";
+import { Experience } from "../types/experience.type";
 import { Formation } from "../types/formation.type";
 
 const IndexPage = () => {
@@ -13,6 +17,7 @@ const IndexPage = () => {
         </div>
         <PresentationText />
         <FormationsSection />
+        <ExperiencesSection />
       </div>
     </div>
   );
@@ -37,7 +42,7 @@ const Presentation = () => {
         className="max-w-80 rounded-lg shadow-2xl"
       />
       <div>
-        <h1 className="text-5xl font-bold">Developer Frontend</h1>
+        <h1 className="text-5xl font-bold">Développeur Frontend</h1>
         <div className="divider"></div>
         <p className="py-3 text-2xl text-center">
           Web - Mobile - Logiciel
@@ -61,8 +66,7 @@ const FormationsSection = () => {
   const formations: Formation[] = formationsData;
   return (
     <div className="flex flex-col">
-      <h2 className="text-2xl font-bold">Formations</h2>
-      <div className="divider mt-0"></div>
+      <SectionTitle title="Formations" />
 
       <ul className="timeline timeline-vertical w-fit">
         {
@@ -85,6 +89,20 @@ const FormationsSection = () => {
           ))
         }
       </ul>
+    </div>
+  );
+};
+
+const ExperiencesSection = () => {
+  return (
+    <div className="flex flex-col">
+      <SectionTitle title="Expériences Professionnelles" />
+
+      <div className="flex flex-col gap-6">
+        {experiencesData.map((experience: Experience) => (
+          <ExperienceCard {...experience} />
+        ))}
+      </div>
     </div>
   );
 };
