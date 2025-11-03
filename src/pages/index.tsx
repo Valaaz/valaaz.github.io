@@ -1,11 +1,12 @@
 import * as React from "react";
 import ExperienceCard from "../components/experience-card.component";
 import SectionTitle from "../components/section-title.component";
+import SkillCard from "../components/skill-card.component";
 import experiencesData from "../data/experiences.data.json";
 import formationsData from "../data/formations.data.json";
-import portrait from "../images/portrait.jpg";
-import { Experience } from "../types/experience.type";
-import { Formation } from "../types/formation.type";
+import skillsData from "../data/skills.data.json";
+import { ExperienceType } from "../types/experience.type";
+import { FormationType } from "../types/formation.type";
 
 const IndexPage = () => {
   return (
@@ -18,6 +19,7 @@ const IndexPage = () => {
         <PresentationText />
         <FormationsSection />
         <ExperiencesSection />
+        <SkillsSection />
       </div>
     </div>
   );
@@ -38,7 +40,7 @@ const Presentation = () => {
   return (
     <div className="hero-content flex-col lg:flex-row-reverse gap-20">
       <img
-        src={portrait}
+        src="/portrait.jpg"
         className="max-w-80 rounded-lg shadow-2xl"
       />
       <div>
@@ -63,7 +65,7 @@ const PresentationText = () => {
 };
 
 const FormationsSection = () => {
-  const formations: Formation[] = formationsData;
+  const formations: FormationType[] = formationsData;
   return (
     <div className="flex flex-col">
       <SectionTitle title="Formations" />
@@ -99,8 +101,22 @@ const ExperiencesSection = () => {
       <SectionTitle title="Expériences Professionnelles" />
 
       <div className="flex flex-col gap-6">
-        {experiencesData.map((experience: Experience) => (
+        {experiencesData.map((experience: ExperienceType) => (
           <ExperienceCard {...experience} />
+        ))}
+      </div>
+    </div>
+  );
+};
+
+const SkillsSection = () => {
+  return (
+    <div className="flex flex-col mb-8">
+      <SectionTitle title="Compétences" />
+
+      <div className="flex flex-wrap justify-center gap-6">
+        {skillsData.map((skill: { sectionName: string; skills: [] }) => (
+          <SkillCard {...skill} />
         ))}
       </div>
     </div>

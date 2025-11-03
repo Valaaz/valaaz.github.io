@@ -31,7 +31,7 @@
             "Java",
             "SGBD",
             "GitLab",
-            "Sl4j et Log4j"
+            "Slf4j et Log4j"
         ]
     }
 ]
