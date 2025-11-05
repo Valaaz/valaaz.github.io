@@ -20,11 +20,9 @@ html {
 
 header {
   background-color: var(--header);
-  height: 130px;
   text-align: center;
   font-size: 40px;
   margin-bottom: 30px;
-  padding-top: 10px;
   box-shadow: 0 0 4px 0 #252525, 0 2px 4px #252525;
 }
 
