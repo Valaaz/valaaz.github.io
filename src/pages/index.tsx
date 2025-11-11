@@ -1,5 +1,6 @@
 import * as React from "react";
 import ExperienceCard from "../components/experience-card.component";
+import Header from "../components/header.layout";
 import SectionTitle from "../components/section-title.component";
 import SkillCard from "../components/skill-card.component";
 import experiencesData from "../data/experiences.data.json";
@@ -25,17 +26,6 @@ const IndexPage = () => {
   );
 };
 
-const Header = () => {
-  return (
-    <header className="navbar bg-secondary">
-      <div className="navbar-start">
-      </div>
-      <h1 className="navbar-center text-xl font-bold">Portfolio</h1>
-      <div className="navbar-end" />
-    </header>
-  );
-}
-
 const Presentation = () => {
   return (
     <div className="hero-content flex-col lg:flex-row-reverse gap-20">
@@ -46,7 +36,7 @@ const Presentation = () => {
       <div>
         <h1 className="text-5xl font-bold">Développeur Frontend</h1>
         <div className="divider"></div>
-        <p className="py-3 text-2xl text-center">
+        <p className="text-2xl text-center">
           Web - Mobile - Logiciel
         </p>
       </div>
@@ -58,7 +48,8 @@ const PresentationText = () => {
   return (
     <div className="card bg-secondary w-[90%] self-center">
       <div className="card-body">
-        <p>Diplômé d'un Master Informatique avec une spécialisation IHM, j'aime développer des interfaces et gérer les interactions avec les utilisateurs. Les domaines dans lequels je m'épanouis sont le développement mobile, le développement web et le développement logiciel.</p>
+        <p><span>“</span>Diplômé d'un Master Informatique avec une spécialisation IHM, j'aime développer des interfaces et gérer les interactions avec les utilisateurs.
+          Les domaines dans lequels je m'épanouis sont le développement mobile, le développement web et le développement logiciel.<span>”</span></p>
       </div>
     </div>
   );

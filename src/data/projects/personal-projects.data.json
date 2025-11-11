@@ -1,0 +1,23 @@
+[
+    {
+        "title": "Bot Discord",
+        "description": "Développement d'un bot personnel avec des fonctionnalités variées pour un serveur Discord privé.",
+        "technologies": [
+            "JavaScript",
+            "JSON"
+        ],
+        "team": 1,
+        "link": "https://github.com/Valaaz/Bot-Discord-Github"
+    },
+    {
+        "title": "Portfolio",
+        "description": "Refonte complète du portfolio pour le rendre plus moderne et esthétique.",
+        "technologies": [
+            "HTML",
+            "CSS",
+            "JavaScript"
+        ],
+        "team": 1,
+        "link": "https://github.com/Valaaz/valaaz.github.io"
+    }
+]

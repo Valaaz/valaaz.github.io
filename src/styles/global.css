@@ -1,3 +1,16 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.card-shadow {
+    box-shadow: 0 0 3px 1px #b8b3b3;
+}
+
+.chip {
+    border: none;
+    box-shadow: 0 0 3px 1px grey;
+    /* background-image: linear-gradient(to right, #ffa829, #ff9833, #ff883d, #ff7848, #ff6953); */
+    /* background-image: linear-gradient(to right, #dbca9b, #d1ba88, #c7a976, #bd9964, #b48954); */
+    /* background-image: linear-gradient(to right, #d98052, #cb724b, #be6444, #b0563d, #a24936); */
+    background-image: linear-gradient(to right, #ccb3a5, #caad9d, #c9a896, #c7a28e, #c59c87);
+}
