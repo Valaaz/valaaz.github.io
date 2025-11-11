@@ -1,11 +1,18 @@
 @import 'tailwindcss';
+@plugin "daisyui";
 
 @source '../**/*.{js,jsx,ts,tsx}';
 
-@theme {
-  --color-primary: #ece3ca;
-  --color-secondary: #d9cbbe;
-  --color-font: #30031d;
+@plugin "daisyui/theme" {
+    name: "personal-theme";
+    default: true; /* set as default */
+    prefersdark: false; /* set as default dark mode (prefers-color-scheme:dark) */
+    color-scheme: light; /* color of browser-provided UI */
+
+    --color-primary: #d9cbbe;
+    --color-secondary: #ece3ca;
+    --color-font: #30031d;
+    --color-base-100: var(--color-secondary);
 }
 
 /*

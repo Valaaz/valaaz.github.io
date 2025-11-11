@@ -11,7 +11,7 @@ import { FormationType } from "../types/formation.type";
 
 const IndexPage = () => {
   return (
-    <div className="h-screen flex flex-col" data-theme="retro">
+    <div className="h-screen flex flex-col">
       <Header />
       <div className="flex flex-col gap-4">
         <div className="hero">
@@ -46,7 +46,7 @@ const Presentation = () => {
 
 const PresentationText = () => {
   return (
-    <div className="card bg-secondary w-[90%] self-center">
+    <div className="card bg-primary w-[90%] self-center">
       <div className="card-body">
         <p><span>“</span>Diplômé d'un Master Informatique avec une spécialisation IHM, j'aime développer des interfaces et gérer les interactions avec les utilisateurs.
           Les domaines dans lequels je m'épanouis sont le développement mobile, le développement web et le développement logiciel.<span>”</span></p>
@@ -65,7 +65,7 @@ const FormationsSection = () => {
         {
           formations.map((formation, index) => (
             <li className="first:h-auto last:h-auto h-[100px]">
-              {index !== 0 && <hr />}
+              {index !== 0 && <hr className="bg-primary" />}
               <div className="timeline-start">{formation.years}</div>
               <div className="timeline-middle">
                 <svg width="32" height="32" viewBox="0 0 32 32">
@@ -77,7 +77,7 @@ const FormationsSection = () => {
                 <div className="font-bold">{formation.degree}</div>
                 <div>{formation.location}</div>
               </div>
-              {formations.length - 1 !== index && <hr />}
+              {formations.length - 1 !== index && <hr className="bg-primary" />}
             </li>
           ))
         }

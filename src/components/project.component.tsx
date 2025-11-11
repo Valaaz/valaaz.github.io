@@ -3,7 +3,7 @@ import { ProjectType } from "../types/project.type";
 
 const Project = (projectData: ProjectType) => {
     return (
-        <div className="card bg-secondary card-shadow h-full">
+        <div className="card bg-primary card-shadow h-full">
             <div className="card-body py-6">
                 <h2 className="card-title">
                     {projectData.title} -
