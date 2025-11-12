@@ -1,5 +1,6 @@
 import React from "react";
-import Header from "../components/header.layout";
+import Footer from "../components/layouts/footer.layout";
+import Header from "../components/layouts/header.layout";
 import Project from "../components/project.component";
 import projectsDut from "../data/projects/dut-projects.data.json";
 import projectsLicence from "../data/projects/licence-projects.data.json";
@@ -15,6 +16,7 @@ const ProjectsPage = () => {
                 <ProjectsSection title="Licence" projects={projectsLicence} />
                 <ProjectsSection title="DUT" projects={projectsDut} />
             </div>
+            <Footer />
         </div>
     );
 };

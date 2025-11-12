@@ -1,6 +1,7 @@
 import * as React from "react";
 import ExperienceCard from "../components/experience-card.component";
-import Header from "../components/header.layout";
+import Footer from "../components/layouts/footer.layout";
+import Header from "../components/layouts/header.layout";
 import SectionTitle from "../components/section-title.component";
 import SkillCard from "../components/skill-card.component";
 import experiencesData from "../data/experiences.data.json";
@@ -21,6 +22,7 @@ const IndexPage = () => {
         <FormationsSection />
         <ExperiencesSection />
         <SkillsSection />
+        <Footer />
       </div>
     </div>
   );
@@ -102,7 +104,7 @@ const ExperiencesSection = () => {
 
 const SkillsSection = () => {
   return (
-    <div className="flex flex-col mb-8">
+    <div className="flex flex-col">
       <SectionTitle title="Compétences" />
 
       <div className="flex flex-wrap justify-center gap-6">
