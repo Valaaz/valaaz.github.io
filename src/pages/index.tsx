@@ -12,7 +12,7 @@ import { FormationType } from "../types/formation.type";
 
 const IndexPage = () => {
   return (
-    <div className="h-screen flex flex-col">
+    <div className="h-screen flex flex-col" data-theme="personal-theme">
       <Header />
       <div className="flex flex-col gap-4">
         <div className="hero">

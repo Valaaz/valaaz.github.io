@@ -6,13 +6,14 @@
 @plugin "daisyui/theme" {
     name: "personal-theme";
     default: true; /* set as default */
-    prefersdark: false; /* set as default dark mode (prefers-color-scheme:dark) */
+    prefersdark: true; /* set as default dark mode (prefers-color-scheme:dark) */
     color-scheme: light; /* color of browser-provided UI */
 
     --color-primary: #d9cbbe;
     --color-secondary: #ece3ca;
     --color-font: #30031d;
     --color-base-100: var(--color-secondary);
+    --color-base-content: black;
 }
 
 /*
