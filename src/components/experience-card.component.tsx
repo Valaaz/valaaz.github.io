@@ -20,7 +20,11 @@ const ExperienceCard = (experience: ExperienceType) => {
                         ))}
                     </ul>
                 </div>
-                <p className="font-bold">{experience.technologies.join(' - ')}</p>
+                <div className="flex gap-2">
+                    {experience.technologies.map((tech) => (
+                        <span className="badge badge-outline py-3 chip">{tech}</span>
+                    ))}
+                </div>
             </div>
         </div>
     );
