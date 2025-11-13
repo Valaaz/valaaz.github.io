@@ -30,17 +30,31 @@ const IndexPage = () => {
 
 const Presentation = () => {
   return (
-    <div className="hero-content flex-col lg:flex-row-reverse gap-20">
-      <img
-        src="/portrait.jpg"
-        className="max-w-80 rounded-lg shadow-2xl"
-      />
+    <div className="hero-content flex-col md:flex-row-reverse gap-20">
+      <div className="hover-3d">
+        <img
+          src="/portrait.jpg"
+          className="max-w-80 rounded-lg shadow-2xl"
+        />
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
       <div>
-        <h1 className="text-5xl font-bold">Développeur Frontend</h1>
+        <h1 className="text-5xl text-center font-bold">Développeur Frontend</h1>
         <div className="divider"></div>
-        <p className="text-2xl text-center">
-          Web - Mobile - Logiciel
-        </p>
+        <span className="text-rotate text-2xl justify-items-center w-full duration-6000 pointer-events-none">
+          <span>
+            <span>🌐 Web</span>
+            <span>📱 Mobile</span>
+            <span>💻 Logiciel</span>
+          </span>
+        </span>
       </div>
     </div>
   );
