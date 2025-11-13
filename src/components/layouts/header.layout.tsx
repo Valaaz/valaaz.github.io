@@ -12,7 +12,7 @@ export default function Header() {
         <header className="navbar bg-primary mb-6">
             <div className="navbar-start">
                 <div className="dropdown">
-                    <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
+                    <div tabIndex={0} role="button" className="btn btn-ghost md:hidden">
                         <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /> </svg>
                     </div>
                     <ul
@@ -24,7 +24,7 @@ export default function Header() {
                 </div>
                 <h1 className="text-xl font-bold">Portfolio</h1>
             </div>
-            <div className="navbar-center hidden lg:flex">
+            <div className="navbar-center hidden md:flex">
                 <div role="tablist" className="tabs tabs-border">
                     <Link to="/" className="tab">Présentation</Link>
                     <Link to="/projects" className="tab">Projets</Link>
