@@ -3,10 +3,10 @@ import { ExperienceType } from "../types/experience.type";
 
 const ExperienceCard = (experience: ExperienceType) => {
     return (
-        <div className="card card-side w-[90%] self-center shadow-xs bg-primary">
-            <p className="flex justify-center items-center ml-4 w-32 text-3xl text-center shrink-0">{experience.date}</p>
-            <div className="divider divider-horizontal py-3 flex-none"></div>
-            <div className="card-body pl-0 pt-2 pb-2 flex-1">
+        <div className="card w-[90%] p-4 self-center shadow-xs bg-primary md:card-side">
+            <p className="justify-center text-center text-2xl md:flex md:items-center md:w-32 md:text-3xl md:shrink-0">{experience.date}</p>
+            <div className="divider divider-vertical m-0 flex-none md:divider-horizontal"></div>
+            <div className="card-body p-0 flex-1 lg:ml-2">
                 <div>
                     <h2 className="card-title">{experience.title}</h2>
                     <p className="italic">{experience.location}</p>
@@ -20,7 +20,7 @@ const ExperienceCard = (experience: ExperienceType) => {
                         ))}
                     </ul>
                 </div>
-                <div className="flex gap-2">
+                <div className="flex gap-2 justify-center md:justify-start">
                     {experience.technologies.map((tech) => (
                         <span className="badge badge-outline py-3 chip">{tech}</span>
                     ))}
