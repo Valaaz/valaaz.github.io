@@ -15,9 +15,7 @@ const IndexPage = () => {
     <div className="h-screen flex flex-col" data-theme="personal-theme">
       <Header />
       <div className="flex flex-col gap-4">
-        <div className="hero">
-          <Presentation />
-        </div>
+        <Presentation />
         <PresentationText />
         <FormationsSection />
         <ExperiencesSection />
@@ -30,31 +28,33 @@ const IndexPage = () => {
 
 const Presentation = () => {
   return (
-    <div className="hero-content flex-col md:flex-row-reverse gap-20">
-      <div className="hover-3d">
-        <img
-          src="/portrait.jpg"
-          className="max-w-80 rounded-lg shadow-2xl"
-        />
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-      </div>
-      <div>
-        <h1 className="text-5xl text-center font-bold">Développeur Frontend</h1>
-        <div className="divider"></div>
-        <span className="text-rotate text-2xl justify-items-center w-full duration-6000 pointer-events-none">
-          <span>
-            <span>🌐 Web</span>
-            <span>📱 Mobile</span>
-            <span>💻 Logiciel</span>
+    <div className="hero">
+      <div className="hero-content flex-col md:flex-row-reverse gap-20">
+        <div className="hover-3d">
+          <img
+            src="/portrait.jpg"
+            className="max-w-80 rounded-lg shadow-2xl"
+          />
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+        <div>
+          <h1 className="text-5xl text-center font-bold">Développeur Frontend</h1>
+          <div className="divider"></div>
+          <span className="flex justify-center text-rotate text-2xl w-full duration-6000 pointer-events-none">
+            <span>
+              <span>🌐 Web</span>
+              <span>📱 Mobile</span>
+              <span>💻 Logiciel</span>
+            </span>
           </span>
-        </span>
+        </div>
       </div>
     </div>
   );
