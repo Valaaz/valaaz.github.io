@@ -28,7 +28,7 @@ const ProjectsSection = ({ title, projects }: { title: string, projects: [] }) =
                 <h1 className="text-center text-2xl font-bold uppercase w-full">{title}</h1>
                 <div className="divider my-0 mx-[30%]"></div>
             </div>
-            <div className="grid grid-cols-[repeat(auto-fit,minmax(450px,1fr))] gap-3 px-2">
+            <div className="flex flex-col md:grid md:grid-cols-[repeat(auto-fit,minmax(450px,1fr))] gap-3 px-2">
                 {projects.map((project: ProjectType) => (
                     <Project {...project} />
                 ))}

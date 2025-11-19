@@ -5,14 +5,16 @@ const Project = (projectData: ProjectType) => {
     return (
         <div className="card bg-primary card-shadow h-full">
             <div className="card-body py-6">
-                <h2 className="card-title">
-                    {projectData.title} -
-                    <span className="flex items-baseline gap-0.5">
-                        {projectData.team}<img src="/icons/person.svg" alt="Person icon" width="14"></img>
+                <h2 className="card-title flex flex-wrap items-baseline gap-1">
+                    <span>{projectData.title}</span>
+                    <span>-</span>
+                    <span className="inline-flex items-baseline gap-0.5">
+                        {projectData.team}
+                        <img src="/icons/person.svg" alt="Person icon" width="14" />
                     </span>
                 </h2>
                 <p>{projectData.description}</p>
-                <div className="flex gap-2">
+                <div className="flex flex-wrap gap-2 w-[90%]">
                     {projectData.technologies.map((tech) => (
                         <span className="badge badge-outline py-3 chip">{tech}</span>
                     ))}
