@@ -14,7 +14,7 @@ const IndexPage = () => {
   return (
     <div className="h-screen flex flex-col" data-theme="personal-theme">
       <Header />
-      <div className="flex flex-col gap-4">
+      <div className="flex flex-col gap-6">
         <Presentation />
         <PresentationText />
         <FormationsSection />
@@ -77,27 +77,29 @@ const FormationsSection = () => {
     <div className="flex flex-col">
       <SectionTitle title="Formations" />
 
-      <ul className="timeline timeline-vertical w-fit">
-        {
-          formations.map((formation, index) => (
-            <li className="first:h-auto last:h-auto h-[100px]">
-              {index !== 0 && <hr className="bg-primary" />}
-              <div className="timeline-start">{formation.years}</div>
-              <div className="timeline-middle">
-                <svg width="32" height="32" viewBox="0 0 32 32">
-                  <circle cx="16" cy="16" r="14" stroke="black" strokeWidth="2" fill="none" />
-                  <circle cx="16" cy="16" r="12" fill="#7f1d1d" />
-                </svg>
-              </div>
-              <div className="timeline-end">
-                <div className="font-bold">{formation.degree}</div>
-                <div>{formation.location}</div>
-              </div>
-              {formations.length - 1 !== index && <hr className="bg-primary" />}
-            </li>
-          ))
-        }
-      </ul>
+      <div className="px-4 md:flex">
+        <ul className="timeline timeline-vertical">
+          {
+            formations.map((formation, index) => (
+              <li className="first:h-auto last:h-auto h-[100px]">
+                {index !== 0 && <hr className="bg-primary" />}
+                <div className="timeline-start">{formation.years}</div>
+                <div className="timeline-middle">
+                  <svg width="32" height="32" viewBox="0 0 32 32">
+                    <circle cx="16" cy="16" r="14" stroke="black" strokeWidth="2" fill="none" />
+                    <circle cx="16" cy="16" r="12" fill="#7f1d1d" />
+                  </svg>
+                </div>
+                <div className="timeline-end">
+                  <div className="font-bold">{formation.degree}</div>
+                  <div>{formation.location}</div>
+                </div>
+                {formations.length - 1 !== index && <hr className="bg-primary" />}
+              </li>
+            ))
+          }
+        </ul>
+      </div>
     </div>
   );
 };
