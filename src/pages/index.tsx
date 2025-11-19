@@ -123,7 +123,7 @@ const SkillsSection = () => {
     <div className="flex flex-col">
       <SectionTitle title="Compétences" />
 
-      <div className="flex flex-wrap justify-center gap-6">
+      <div className="flex flex-col justify-center gap-6 md:flex-row md:flex-wrap">
         {skillsData.map((skill: { sectionName: string; skills: [] }) => (
           <SkillCard {...skill} />
         ))}
