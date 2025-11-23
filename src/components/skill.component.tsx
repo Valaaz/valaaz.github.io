@@ -4,7 +4,7 @@ const Skill = ({ name, img }: { name: string, img: string }) => {
     return (
         <div className="flex flex-col items-center">
             <img src={img} className="w-6 h-6" />
-            <p>{name}</p>
+            <p className="text-center text-base/[normal]">{name}</p>
         </div>
     );
 };
