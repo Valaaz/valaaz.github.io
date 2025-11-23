@@ -18,8 +18,8 @@ export default function Header() {
                     <ul
                         tabIndex={-1}
                         className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 p-2 items-start shadow">
-                        <li><Link to="/" className="tab">Présentation</Link></li>
-                        <li><Link to="/projects" className="tab">Projets</Link></li>
+                        <li><Link to="/" className="tab text-base">Présentation</Link></li>
+                        <li><Link to="/projects" className="tab text-base">Projets</Link></li>
                     </ul>
                 </div>
                 <h1 className="text-xl font-bold">Portfolio</h1>
@@ -31,20 +31,20 @@ export default function Header() {
                 </div>
             </div>
             <div className="navbar-end">
-                <div className="dropdown dropdown-end">
+                <div className="dropdown dropdown-end dropdown-open">
                     <div tabIndex={0} role="button" className="btn btn-ghost rounded-field">Contacter</div>
                     <ul
                         tabIndex={-1}
-                        className="menu dropdown-content bg-secondary rounded-box z-1 mt-4 w-52 p-2 shadow-sm">
+                        className="menu dropdown-content bg-secondary rounded-box z-1 mt-4 w-max p-2 shadow-sm">
                         <li>
                             <div className="flex justify-between">
-                                <a href={"mailto:" + infos.mail} target="_blank" rel="noopener noreferrer">{infos.mail}</a>
+                                <a href={"mailto:" + infos.mail} target="_blank" rel="noopener noreferrer" className="text-base">{infos.mail}</a>
                                 <img src="/icons/open-line.svg" alt="Ouvrir lien" width="18px" />
                             </div>
                         </li>
                         <li>
                             <div className="flex justify-between">
-                                <a href={infos.linkedin} target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                                <a href={infos.linkedin} target="_blank" rel="noopener noreferrer" className="text-base">LinkedIn</a>
                                 <img src="/icons/open-line.svg" alt="Ouvrir lien" width="18px" />
                             </div>
                         </li>
@@ -57,7 +57,7 @@ export default function Header() {
                             }}
                         >
                             <div className="flex justify-between">
-                                <p>{infos.phone.replace('+33', '+33 ').replace(/(\d)(?=(\d{2})+(?!\d))/g, '$1 ').trim()}</p>
+                                <p className="text-base">{infos.phone.replace('+33', '+33 ').replace(/(\d)(?=(\d{2})+(?!\d))/g, '$1 ').trim()}</p>
                                 <img src="/icons/copy.svg" alt="Ouvrir lien" width="18px" />
                             </div>
                         </li>
