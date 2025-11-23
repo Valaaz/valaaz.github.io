@@ -8,6 +8,38 @@ export default function Header() {
     const infos: PersonalInformationType = personalInformations;
     console.log(infos);
 
+    const copyToClipboard = () => {
+        const phone = infos.phone;
+
+        if (navigator.clipboard && navigator.clipboard.writeText) {
+            navigator.clipboard
+                .writeText(phone)
+                .then(() => {
+                    setPhoneNumberCopied(true);
+                    setTimeout(() => setPhoneNumberCopied(false), 2000);
+                })
+                .catch(() => {
+                    fallbackCopy(phone);
+                });
+        } else {
+            fallbackCopy(phone);
+        }
+    };
+
+    const fallbackCopy = (text: string) => {
+        const input = document.createElement("input");
+        input.value = text;
+        document.body.appendChild(input);
+        input.select();
+
+        // Wait for Safari to give an alternative
+        document.execCommand("copy");
+        document.body.removeChild(input);
+
+        setPhoneNumberCopied(true);
+        setTimeout(() => setPhoneNumberCopied(false), 2000);
+    };
+
     return (
         <header className="navbar bg-primary mb-6">
             <div className="navbar-start">
@@ -31,7 +63,7 @@ export default function Header() {
                 </div>
             </div>
             <div className="navbar-end">
-                <div className="dropdown dropdown-end dropdown-open">
+                <div className="dropdown dropdown-end">
                     <div tabIndex={0} role="button" className="btn btn-ghost rounded-field">Contacter</div>
                     <ul
                         tabIndex={-1}
@@ -51,9 +83,7 @@ export default function Header() {
                         <div className="divider mx-3 my-0 gap-0"></div>
                         <li className="tooltip" data-tip={phoneNumberCopied ? 'Copié !' : 'Copier'}
                             onClick={() => {
-                                navigator.clipboard.writeText(infos.phone);
-                                setPhoneNumberCopied(true);
-                                setTimeout(() => setPhoneNumberCopied(false), 2000)
+                                copyToClipboard();
                             }}
                         >
                             <div className="flex justify-between">
