@@ -29,11 +29,11 @@ const IndexPage = () => {
 const Presentation = () => {
   return (
     <div className="hero">
-      <div className="hero-content flex-col md:flex-row-reverse gap-20">
+      <div className="hero-content flex-col lg:flex-row-reverse gap-10 lg:gap-20">
         <div className="hover-3d">
           <img
             src="/portrait.jpg"
-            className="max-w-80 rounded-lg shadow-2xl"
+            className="max-w-60 rounded-lg shadow-2xl lg:max-w-80"
           />
           <div></div>
           <div></div>
