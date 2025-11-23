@@ -62,7 +62,7 @@ const Presentation = () => {
 
 const PresentationText = () => {
   return (
-    <div className="card bg-primary w-[90%] self-center">
+    <div className="card bg-primary w-[90%] self-center card-shadow">
       <div className="card-body">
         <p><span>“</span>Diplômé d'un Master Informatique avec une spécialisation IHM, j'aime développer des interfaces et gérer les interactions avec les utilisateurs.
           Les domaines dans lequels je m'épanouis sont le développement mobile, le développement web et le développement logiciel.<span>”</span></p>
