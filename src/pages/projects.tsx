@@ -4,6 +4,7 @@ import Header from "../components/layouts/header.layout";
 import Project from "../components/project.component";
 import projectsDut from "../data/projects/dut-projects.data.json";
 import projectsLicence from "../data/projects/licence-projects.data.json";
+import projectsMaster from "../data/projects/master-projects.data.json";
 import projectsPersonal from "../data/projects/personal-projects.data.json";
 import { ProjectType } from "../types/project.type";
 
@@ -13,6 +14,7 @@ const ProjectsPage = () => {
             <Header />
             <div className="flex flex-col gap-10">
                 <ProjectsSection title="Projets personnels" projects={projectsPersonal} />
+                <ProjectsSection title="Master" projects={projectsMaster} />
                 <ProjectsSection title="Licence" projects={projectsLicence} />
                 <ProjectsSection title="DUT" projects={projectsDut} />
             </div>

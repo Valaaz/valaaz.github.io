@@ -19,7 +19,10 @@ const Project = (projectData: ProjectType) => {
                         <span className="badge badge-outline py-3 chip">{tech}</span>
                     ))}
                 </div>
-                <a className="w-6 absolute right-4 bottom-4 transition-transform hover:scale-120" href={projectData.link} target="_blank" rel="noopener noreferrer"><img src="/logos/github.svg"></img></a>
+                {projectData.link &&
+                    <a className="w-6 absolute right-4 bottom-4 transition-transform hover:scale-120" href={projectData.link} target="_blank" rel="noopener noreferrer">
+                        <img src="/logos/github.svg"></img>
+                    </a>}
             </div>
         </div>
     );
