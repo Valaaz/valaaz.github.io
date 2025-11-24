@@ -13,8 +13,9 @@
     --color-secondary: #ece3ca;
     --color-font: #30031d;
     --color-base-100: var(--color-secondary);
-    --color-base-200: var(--color-secondary);
-    --color-base-300: var(--color-secondary);
+    --color-base-200: #f9f7f0;
+    --color-base-300: #dfcfa4;
+    /* --color-base-content: #604b38; */
     --color-base-content: black;
 }
 

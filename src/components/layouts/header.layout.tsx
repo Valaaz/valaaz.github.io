@@ -64,10 +64,14 @@ export default function Header() {
             </div>
             <div className="navbar-end">
                 <div className="dropdown dropdown-end">
-                    <div tabIndex={0} role="button" className="btn btn-ghost rounded-field">Contacter</div>
+                    <div tabIndex={0} role="button" className="btn btn-ghost rounded-field bg-primary hover:brightness-75">Contacter
+                        <svg className="mt-px size-2 opacity-60 inline-block" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2048 2048">
+                            <path d="M1799 349l242 241-1017 1017L7 590l242-241 775 775 775-775z"></path>
+                        </svg>
+                    </div>
                     <ul
                         tabIndex={-1}
-                        className="menu dropdown-content bg-secondary rounded-box z-1 mt-4 w-max p-2 shadow-sm">
+                        className="menu dropdown-content bg-base-100 rounded-box z-1 mt-4 w-max p-2 shadow-sm">
                         <li>
                             <div className="flex justify-between">
                                 <a href={"mailto:" + infos.mail} target="_blank" rel="noopener noreferrer" className="text-base">{infos.mail}</a>
