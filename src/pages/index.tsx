@@ -6,9 +6,11 @@ import SectionTitle from "../components/section-title.component";
 import SkillCard from "../components/skill-card.component";
 import experiencesData from "../data/experiences.data.json";
 import formationsData from "../data/formations.data.json";
+import personalInformations from "../data/personal-informations.data.json";
 import skillsData from "../data/skills.data.json";
 import { ExperienceType } from "../types/experience.type";
 import { FormationType } from "../types/formation.type";
+import { PersonalInformationType } from "../types/personal-information.type";
 
 const IndexPage = () => {
   return (
@@ -35,6 +37,8 @@ const Presentation = () => {
             src="/portrait.jpg"
             className="max-w-60 rounded-lg shadow-2xl lg:max-w-80"
           />
+
+          {/* 8 div for 3D hover effect */}
           <div></div>
           <div></div>
           <div></div>
@@ -61,13 +65,18 @@ const Presentation = () => {
 };
 
 const PresentationText = () => {
+  const infos: PersonalInformationType = personalInformations;
+
   return (
     <div className="card bg-primary w-[90%] self-center card-shadow">
       <div className="card-body">
-        <p><span>“</span>Diplômé d'un Master Informatique avec une spécialisation IHM, j'aime développer des interfaces et gérer les interactions avec les utilisateurs.
-          Les domaines dans lequels je m'épanouis sont le développement mobile, le développement web et le développement logiciel.<span>”</span></p>
+        <div className="flex flex-col">
+          <img src="/icons/quote-left.svg" alt="Guillemet gauche" width="24px" />
+          <p className="text-[18px] text-justify italic" style={{ textIndent: "2rem" }}>{infos.presentationPhrase}</p>
+          <img src="/icons/quote-right.svg" alt="Guillemet right" width="24px" className="self-end" />
+        </div>
       </div>
-    </div>
+    </div >
   );
 };
 
