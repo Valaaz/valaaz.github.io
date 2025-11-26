@@ -42,6 +42,8 @@ export default function Header() {
 
     return (
         <header className="navbar bg-primary mb-6 card-shadow">
+
+            {/* Hamburger & Title */}
             <div className="navbar-start">
                 <div className="dropdown">
                     <div tabIndex={0} role="button" className="btn btn-ghost md:hidden">
@@ -49,19 +51,34 @@ export default function Header() {
                     </div>
                     <ul
                         tabIndex={-1}
-                        className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 p-2 items-start shadow">
-                        <li><Link to="/" className="tab text-base">Présentation</Link></li>
-                        <li><Link to="/projects" className="tab text-base">Projets</Link></li>
+                        className="menu dropdown-content bg-base-100 rounded-box w-max z-1 mt-3 p-2 shadow-sm">
+                        <li><Link to="/" className="tab text-base w-full justify-start">Présentation</Link></li>
+                        <li><Link to="/projects" className="tab text-base w-full justify-start">Projets</Link></li>
+                        <div className="divider mx-2 my-0 gap-0"></div>
+                        <li>
+                            <a href="/cv.pdf" target="_blank" className="text-base flex justify-between w-full">
+                                CV
+                                <img src="/icons/open-line.svg" alt="Ouvrir lien" width="18px" />
+                            </a>
+                        </li>
                     </ul>
                 </div>
                 <h1 className="text-xl font-bold">Portfolio</h1>
             </div>
+
+            {/* Tab */}
             <div className="navbar-center hidden md:flex">
                 <div role="tablist" className="tabs tabs-border">
                     <Link to="/" className="tab">Présentation</Link>
                     <Link to="/projects" className="tab">Projets</Link>
+                    <a href="/cv.pdf" target="_blank" className="tab flex gap-0.5">
+                        CV
+                        <img src="/icons/open-line.svg" alt="Ouvrir lien" width="16px" />
+                    </a>
                 </div>
             </div>
+
+            {/* Contact */}
             <div className="navbar-end">
                 <div className="dropdown dropdown-end">
                     <div tabIndex={0} role="button" className="btn btn-ghost rounded-field bg-primary hover:brightness-75">Contacter
@@ -73,16 +90,16 @@ export default function Header() {
                         tabIndex={-1}
                         className="menu dropdown-content bg-base-100 rounded-box z-1 mt-4 w-max p-2 shadow-sm">
                         <li>
-                            <div className="flex justify-between">
-                                <a href={"mailto:" + infos.mail} target="_blank" rel="noopener noreferrer" className="text-base">{infos.mail}</a>
+                            <a href={"mailto:" + infos.mail} target="_blank" rel="noopener noreferrer" className="text-base flex justify-between">
+                                {infos.mail}
                                 <img src="/icons/open-line.svg" alt="Ouvrir lien" width="18px" />
-                            </div>
+                            </a>
                         </li>
                         <li>
-                            <div className="flex justify-between">
-                                <a href={infos.linkedin} target="_blank" rel="noopener noreferrer" className="text-base">LinkedIn</a>
+                            <a href={infos.linkedin} target="_blank" rel="noopener noreferrer" className="text-base flex justify-between">
+                                LinkedIn
                                 <img src="/icons/open-line.svg" alt="Ouvrir lien" width="18px" />
-                            </div>
+                            </a>
                         </li>
                         <div className="divider mx-3 my-0 gap-0"></div>
                         <li className="tooltip" data-tip={phoneNumberCopied ? 'Copié !' : 'Copier'}
@@ -92,7 +109,7 @@ export default function Header() {
                         >
                             <div className="flex justify-between">
                                 <p className="text-base">{infos.phone.replace('+33', '+33 ').replace(/(\d)(?=(\d{2})+(?!\d))/g, '$1 ').trim()}</p>
-                                <img src="/icons/copy.svg" alt="Ouvrir lien" width="18px" />
+                                <img src="/icons/copy.svg" alt="Copier numéro de téléphone" width="18px" />
                             </div>
                         </li>
                     </ul>
