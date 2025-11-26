@@ -30,7 +30,7 @@ const Presentation = () => {
   return (
     <div className="hero">
       <div className="hero-content flex-col lg:flex-row-reverse gap-10 lg:gap-20">
-        <div className="hover-3d">
+        <div className="lg:hover-3d">
           <img
             src="/portrait.jpg"
             className="max-w-60 rounded-lg shadow-2xl lg:max-w-80"
