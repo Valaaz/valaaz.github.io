@@ -53,7 +53,7 @@ export default function Header() {
                     </div>
                     <ul
                         tabIndex={-1}
-                        className="menu dropdown-content bg-base-100 rounded-box w-max z-1 mt-3 p-2 shadow-sm">
+                        className="menu dropdown-content bg-primary rounded-box w-max z-1 mt-4 p-2 shadow-sm">
                         <li><Link to="/" className="tab text-base w-full justify-start text-black">Présentation</Link></li>
                         <li><Link to="/projects" className="tab text-base w-full justify-start text-black">Projets</Link></li>
                         <div className="divider mx-2 my-0 gap-0"></div>
@@ -90,7 +90,7 @@ export default function Header() {
                     </div>
                     <ul
                         tabIndex={-1}
-                        className="menu dropdown-content bg-base-100 rounded-box z-1 mt-4 w-max p-2 shadow-sm">
+                        className="menu dropdown-content bg-primary rounded-box z-1 mt-4 w-max p-2 shadow-sm">
                         <li>
                             <a href={"mailto:" + infos.mail} target="_blank" rel="noopener noreferrer" className="text-base flex justify-between">
                                 {infos.mail}
