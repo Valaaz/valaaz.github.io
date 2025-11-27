@@ -1,0 +1,86 @@
+[
+    {
+        "sectionName": "Web",
+        "skills": [
+            {
+                "name": "HTML",
+                "img": "/logos/html.svg"
+            },
+            {
+                "name": "CSS",
+                "img": "/logos/css.svg"
+            },
+            {
+                "name": "JavaScript",
+                "img": "/logos/javascript.svg"
+            },
+            {
+                "name": "PHP",
+                "img": "/logos/php.svg"
+            },
+            {
+                "name": "React",
+                "img": "/logos/react.svg"
+            }
+        ]
+    },
+    {
+        "sectionName": "Mobile",
+        "skills": [
+            {
+                "name": "Flutter",
+                "img": "/logos/flutter.svg"
+            },
+            {
+                "name": "React Native",
+                "img": "/logos/react.svg"
+            },
+            {
+                "name": "Kotlin",
+                "img": "/logos/kotlin.svg"
+            }
+        ]
+    },
+    {
+        "sectionName": "Logiciel",
+        "skills": [
+            {
+                "name": "Java",
+                "img": "/logos/java.svg"
+            },
+            {
+                "name": "Python",
+                "img": "/logos/python.svg"
+            },
+            {
+                "name": "C",
+                "img": "/logos/c.svg"
+            },
+            {
+                "name": "C++",
+                "img": "/logos/cpp.svg"
+            }
+        ]
+    },
+    {
+        "sectionName": "Divers",
+        "skills": [
+            {
+                "name": "SGBD",
+                "img": "/logos/sgbd.svg"
+            },
+            {
+                "name": "Github",
+                "img": "/logos/github.svg"
+            },
+            {
+                "name": "Gitlab",
+                "img": "/logos/gitlab.svg"
+            },
+            {
+                "name": "Figma",
+                "img": "/logos/figma.svg"
+            }
+        ]
+    }
+]

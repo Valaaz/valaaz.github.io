@@ -1,0 +1,103 @@
+[
+    {
+        "title": "Jeu de Nim",
+        "description": "Deux joueurs s'affrontent sur une grille avec des cases bannies. Le pion se déplace d'une ou deux cases vers le bas ou la droite, et le but est de faire tomber le pion dans le puits en bas à droite.",
+        "technologies": [
+            "C"
+        ],
+        "date": "Deuxième semestre 2019",
+        "duration": "6 semaines",
+        "team": 3,
+        "link": "https://github.com/AvaN0x/IUT-ProjetNim"
+    },
+    {
+        "title": "Développement d'un site web statique",
+        "description": "Site retraçant l'évolution de l'informatique, ses enjeux et son influence sur le quotidien.",
+        "technologies": [
+            "HTML",
+            "CSS"
+        ],
+        "date": "Deuxième semestre 2019",
+        "duration": "5 semaines",
+        "team": 4,
+        "link": "https://github.com/AvaN0x/IUT-ProjetWeb"
+    },
+    {
+        "title": "Développement d'un site web",
+        "description": "Création d'un site pour les anciens étudiants de l'IUT de Metz.",
+        "technologies": [
+            "HTML",
+            "CSS"
+        ],
+        "date": "Premier semestre 2020",
+        "duration": "8 semaines",
+        "team": 5,
+        "link": "https://github.com/oxypomme/AnciensEtudiantsIUTMetz"
+    },
+    {
+        "title": "Logiciel de gestion d'une vidéothèque",
+        "description": "Développement d'un logiciel permettant de gérer les clients, produits et commandes d'une vidéothèque.",
+        "technologies": [
+            "Java",
+            "Swing"
+        ],
+        "date": "Premier semestre 2020",
+        "duration": "10 semaines",
+        "team": 2,
+        "link": "https://github.com/Valaaz/Projet_JAVA_IUT"
+    },
+    {
+        "title": "Projet CPOA",
+        "description": "Développement d'un logiciel lié à une base de données (CRUD complet) avec design pattern DAO et architecture MVC.",
+        "technologies": [
+            "Java",
+            "JavaFX",
+            "MySQL",
+            "Git"
+        ],
+        "date": "Deuxième semestre 2020",
+        "duration": "8 semaines",
+        "team": 2,
+        "link": "https://github.com/Raigun57/FuretAzancoth_cpoa_projet"
+    },
+    {
+        "title": "Site web dynamique",
+        "description": "Création d'un site dynamique avec gestion d'articles, tri, ajout, modification et suppression.",
+        "technologies": [
+            "HTML5",
+            "CSS3",
+            "PHP",
+            "JavaScript",
+            "MySQL"
+        ],
+        "date": "Deuxième semestre 2020",
+        "duration": "5 semaines",
+        "team": 2,
+        "link": "https://github.com/Valaaz/FuretAzancoth_Web_Projet"
+    },
+    {
+        "title": "Projet Systèmes",
+        "description": "Création d'un serveur capable de gérer plusieurs clients pouvant réserver ou supprimer des places de concert.",
+        "technologies": [
+            "C",
+            "WSL"
+        ],
+        "date": "Deuxième semestre 2020",
+        "duration": "5 semaines",
+        "team": 2,
+        "link": "https://github.com/Valaaz/Projet_Systemes"
+    },
+    {
+        "title": "Portfolio (ancien)",
+        "description": "Création d'un portfolio présentant les projets scolaires et personnels ainsi que le CV.",
+        "technologies": [
+            "HTML",
+            "CSS",
+            "JavaScript"
+        ],
+        "date": "Deuxième semestre 2020",
+        "duration": "3 semaines",
+        "team": 1,
+        "link": "https://github.com/Valaaz/old-portfolio"
+    }
+]

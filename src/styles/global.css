@@ -1,0 +1,51 @@
+@import 'tailwindcss';
+@plugin "daisyui";
+
+@source '../**/*.{js,jsx,ts,tsx}';
+
+@plugin "daisyui/theme" {
+    name: "personal-theme";
+    default: true; /* set as default */
+    prefersdark: true; /* set as default dark mode (prefers-color-scheme:dark) */
+    color-scheme: light; /* color of browser-provided UI */
+
+    --color-primary: #d9cbbe;
+    --color-secondary: #ece3ca;
+    --color-font: #30031d;
+    --color-base-100: var(--color-secondary);
+    --color-base-200: #f9f7f0;
+    --color-base-300: #dfcfa4;
+    /* --color-base-content: #604b38; */
+    --color-base-content: black;
+}
+
+/*
+  The default border color has changed to `currentcolor` in Tailwind CSS v4,
+  so we've added these compatibility styles to make sure everything still
+  looks the same as it did with Tailwind CSS v3.
+
+  If we ever want to remove these styles, we need to add an explicit border
+  color utility to any element that depends on these defaults.
+*/
+@layer base {
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-gray-200, currentcolor);
+  }
+}
+
+.card-shadow {
+    box-shadow: 0 0 3px 1px #b8b3b3;
+}
+
+.chip {
+    border: none;
+    box-shadow: 0 0 3px 1px grey;
+    /* background-image: linear-gradient(to right, #ffa829, #ff9833, #ff883d, #ff7848, #ff6953); */
+    /* background-image: linear-gradient(to right, #dbca9b, #d1ba88, #c7a976, #bd9964, #b48954); */
+    /* background-image: linear-gradient(to right, #d98052, #cb724b, #be6444, #b0563d, #a24936); */
+    background-image: linear-gradient(to right, #ccb3a5, #caad9d, #c9a896, #c7a28e, #c59c87);
+}

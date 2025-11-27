@@ -1,0 +1,36 @@
+{
+  "name": "valaaz-s-portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "description": "valaaz-s-portfolio",
+  "author": "Valentin AZANCOTH",
+  "keywords": [
+    "gatsby"
+  ],
+  "scripts": {
+    "develop": "gatsby develop",
+    "start": "gatsby develop",
+    "build": "gatsby build",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "gatsby": "^5.13.7",
+    "gatsby-plugin-postcss": "^6.13.1",
+    "lucide-react": "^0.474.0",
+    "postcss": "^8.4.47",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.1.17",
+    "@types/node": "^20.11.19",
+    "@types/react": "^18.2.55",
+    "@types/react-dom": "^18.2.19",
+    "daisyui": "^5.5.0",
+    "gh-pages": "^6.3.0",
+    "tailwindcss": "^4.1.17",
+    "typescript": "^5.3.3"
+  }
+}

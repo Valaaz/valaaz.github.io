@@ -1,0 +1,43 @@
+[
+    {
+        "title": "Projet de Développement Mobile",
+        "description": "Application de gestion de recettes de cuisine. Permet d'ajouter, de modifier, de supprimer et de voir le détail d'une recette.",
+        "technologies": [
+            "Kotlin",
+            "Jetpack Compose",
+            "Material Design",
+            "Room",
+            "JSON Server"
+        ],
+        "date": "Deuxième semestre 2024",
+        "duration": "2 semaines",
+        "team": 2,
+        "link": "https://github.com/Valaaz/UFRMIMProjetDevMob"
+    },
+    {
+        "title": "Projet de synthèse de Master - eCAM2I",
+        "description": "Amélioration d'eCAM2I, un site web permettant aux membres de l'université de gérer les candidatures pour le Master. Ajout de fonctionnalités, refonte graphique, correction de bugs.",
+        "technologies": [
+            "Angular",
+            "Java",
+            "Docker",
+            "Jenkins",
+            "Méthodologie Agile"
+        ],
+        "date": "Deuxième semestre 2024",
+        "duration": "4 mois",
+        "team": 5,
+        "link": ""
+    },
+    {
+        "title": "Projet PILS - Jeu en Python",
+        "description": "Développement d'un jeu en Python dans lequel on doit faire disparaître le plus de blocs possibles. On peut faire disparaître les blocs de mêmes couleurs à partir du moment où il y en 3 de la même couleur qui sont adjacents. Les lignes et les colonnes vides sont supprimées.",
+        "technologies": [
+            "Python"
+        ],
+        "date": "Premier semestre 2024",
+        "duration": "3 mois",
+        "team": 2,
+        "link": "https://github.com/Valaaz/Projet-PILS-2024-AZANCOTH-SCANU"
+    }
+]

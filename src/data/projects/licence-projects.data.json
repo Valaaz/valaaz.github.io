@@ -1,0 +1,65 @@
+[
+    {
+        "title": "Projet Sac à dos",
+        "description": "Implémentation d'un système de sac à dos en C avec plusieurs modes d'exécution : récursif, statique et dynamique.",
+        "technologies": [
+            "C",
+            "Makefile"
+        ],
+        "date": "Deuxième semestre 2021",
+        "duration": "5 à 7 semaines",
+        "team": 2,
+        "link": "https://github.com/mattfritsch/backpack-project"
+    },
+    {
+        "title": "Projet de synthèse (backend)",
+        "description": "Projet en C synthétisant différents exercices pour créer une enveloppe convexe à partir d'un ensemble de points.",
+        "technologies": [
+            "C",
+            "Makefile"
+        ],
+        "date": "Premier semestre 2022",
+        "duration": "3 mois",
+        "team": 2,
+        "link": "https://github.com/mattfritsch/backpack-project"
+    },
+    {
+        "title": "Projet de synthèse (frontend)",
+        "description": "Interface graphique en JavaFX permettant de charger et afficher des points et de calculer l'enveloppe convexe via du code C.",
+        "technologies": [
+            "Java",
+            "JavaFX",
+            "JNI",
+            "C"
+        ],
+        "date": "Premier semestre 2022",
+        "duration": "3 semaines",
+        "team": 2,
+        "link": "https://github.com/Valaaz/Projet-Synthese-Interface-Graphique"
+    },
+    {
+        "title": "Interface graphique",
+        "description": "Création d'une interface graphique sur le thème du jeu du pendu, selon une maquette validée par le client.",
+        "technologies": [
+            "Java",
+            "JavaFX",
+            "CSS"
+        ],
+        "date": "Premier semestre 2022",
+        "duration": "1 semaine",
+        "team": 3,
+        "link": "https://github.com/Valaaz/Projet-Interface-Graphique"
+    },
+    {
+        "title": "UNO",
+        "description": "Développement du jeu UNO d'abord en terminal, puis avec une interface graphique.",
+        "technologies": [
+            "Java",
+            "JavaFX"
+        ],
+        "date": "Premier semestre 2022",
+        "duration": "2 mois",
+        "team": 2,
+        "link": "https://github.com/AntoineScanu/Projet_2021-2022_UNO"
+    }
+]

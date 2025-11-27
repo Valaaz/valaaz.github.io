@@ -1,0 +1,42 @@
+[
+    {
+        "title": "Cart Count",
+        "description": "Application mobile pour créer des listes de courses où l'on peut rentrer les quantités et le prix pour obtenir le montant total en temps réel.",
+        "technologies": [
+            "Flutter",
+            "Figma"
+        ],
+        "team": 1,
+        "link": "https://github.com/Valaaz/Cart-Count"
+    },
+    {
+        "title": "Birthday Reminder",
+        "description": "Prototype d'application mobile pour stocker les anniversaires et envoyer des rappels.",
+        "technologies": [
+            "Flutter"
+        ],
+        "team": 1,
+        "link": "https://github.com/Valaaz/birthday-reminder"
+    },
+    {
+        "title": "Portfolio",
+        "description": "Refonte complète du portfolio pour le rendre plus moderne et esthétique.",
+        "technologies": [
+            "HTML",
+            "CSS",
+            "JavaScript"
+        ],
+        "team": 1,
+        "link": "https://github.com/Valaaz/valaaz.github.io"
+    },
+    {
+        "title": "Bot Discord",
+        "description": "Développement d'un bot personnel avec des fonctionnalités variées pour un serveur Discord privé.",
+        "technologies": [
+            "JavaScript",
+            "JSON"
+        ],
+        "team": 1,
+        "link": "https://github.com/Valaaz/Bot-Discord-Github"
+    }
+]
