@@ -8,6 +8,14 @@ import projectsMaster from "../data/projects/master-projects.data.json";
 import projectsPersonal from "../data/projects/personal-projects.data.json";
 import { ProjectType } from "../types/project.type";
 
+export function Head() {
+    return (
+        <>
+            <title>Portfolio - Projets</title>
+        </>
+    )
+}
+
 const ProjectsPage = () => {
     return (
         <div className="h-screen flex flex-col">

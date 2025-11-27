@@ -12,6 +12,14 @@ import { ExperienceType } from "../types/experience.type";
 import { FormationType } from "../types/formation.type";
 import { PersonalInformationType } from "../types/personal-information.type";
 
+export function Head() {
+  return (
+    <>
+      <title>Portfolio - Présentation</title>
+    </>
+  )
+}
+
 const IndexPage = () => {
   return (
     <div className="h-screen flex flex-col" data-theme="personal-theme">
