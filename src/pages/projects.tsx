@@ -1,4 +1,5 @@
 import React from "react";
+import ChangePage from "../animations/change-page.animation";
 import Footer from "../components/layouts/footer.layout";
 import Header from "../components/layouts/header.layout";
 import Project from "../components/project.component";
@@ -20,13 +21,15 @@ const ProjectsPage = () => {
     return (
         <div className="h-screen flex flex-col">
             <Header />
-            <div className="flex flex-col gap-10">
-                <ProjectsSection title="Projets personnels" projects={projectsPersonal} />
-                <ProjectsSection title="Master" projects={projectsMaster} />
-                <ProjectsSection title="Licence" projects={projectsLicence} />
-                <ProjectsSection title="DUT" projects={projectsDut} />
-            </div>
-            <Footer />
+            <ChangePage>
+                <div className="flex flex-col gap-10">
+                    <ProjectsSection title="Projets personnels" projects={projectsPersonal} />
+                    <ProjectsSection title="Master" projects={projectsMaster} />
+                    <ProjectsSection title="Licence" projects={projectsLicence} />
+                    <ProjectsSection title="DUT" projects={projectsDut} />
+                </div>
+                <Footer />
+            </ChangePage>
         </div>
     );
 };

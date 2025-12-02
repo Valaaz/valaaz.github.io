@@ -1,4 +1,5 @@
 import * as React from "react";
+import ChangePage from "../animations/change-page.animation";
 import FadeIn from "../animations/fade-in.animation";
 import ExperienceCard from "../components/experience-card.component";
 import Footer from "../components/layouts/footer.layout";
@@ -25,14 +26,16 @@ const IndexPage = () => {
   return (
     <div className="h-screen flex flex-col" data-theme="personal-theme">
       <Header />
-      <div className="flex flex-col gap-6">
-        <Presentation />
-        <PresentationText />
-        <FormationsSection />
-        <ExperiencesSection />
-        <SkillsSection />
-        <Footer />
-      </div>
+      <ChangePage>
+        <div className="flex flex-col gap-6">
+          <Presentation />
+          <PresentationText />
+          <FormationsSection />
+          <ExperiencesSection />
+          <SkillsSection />
+          <Footer />
+        </div>
+      </ChangePage>
     </div>
   );
 };
