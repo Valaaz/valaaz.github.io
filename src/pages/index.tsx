@@ -1,5 +1,6 @@
 import * as React from "react";
 import ChangePage from "../animations/change-page.animation";
+import OnScroll from "../animations/on-scroll.animation";
 import ExperienceCard from "../components/experience-card.component";
 import Footer from "../components/layouts/footer.layout";
 import Header from "../components/layouts/header.layout";
@@ -41,8 +42,7 @@ const IndexPage = () => {
 
 const Presentation = () => {
   return (
-    // <FadeIn>
-    <div className="hero">
+    <OnScroll className="hero">
       <div className="hero-content flex-col lg:flex-row-reverse gap-10 lg:gap-20">
         <div className="lg:hover-3d border">
           <img
@@ -72,8 +72,7 @@ const Presentation = () => {
           </span>
         </div>
       </div>
-    </div>
-    // </FadeIn>
+    </OnScroll>
   );
 };
 
@@ -81,7 +80,7 @@ const PresentationText = () => {
   const infos: PersonalInformationType = personalInformations;
 
   return (
-    <div className="card bg-primary w-[90%] self-center card-shadow">
+    <OnScroll className="card bg-primary w-[90%] self-center card-shadow">
       <div className="card-body">
         <div className="flex flex-col">
           <img src="/icons/quote-left.svg" alt="Guillemet gauche" width="24px" />
@@ -89,14 +88,14 @@ const PresentationText = () => {
           <img src="/icons/quote-right.svg" alt="Guillemet right" width="24px" className="self-end" />
         </div>
       </div>
-    </div >
+    </OnScroll>
   );
 };
 
 const FormationsSection = () => {
   const formations: FormationType[] = formationsData;
   return (
-    <div className="flex flex-col">
+    <OnScroll className="flex flex-col">
       <SectionTitle title="Formations" />
 
       <div className="px-4 md:flex">
@@ -122,13 +121,13 @@ const FormationsSection = () => {
           }
         </ul>
       </div>
-    </div>
+    </OnScroll>
   );
 };
 
 const ExperiencesSection = () => {
   return (
-    <div className="flex flex-col">
+    <OnScroll className="flex flex-col">
       <SectionTitle title="Expériences Professionnelles" />
 
       <div className="flex flex-col gap-6">
@@ -136,13 +135,13 @@ const ExperiencesSection = () => {
           <ExperienceCard {...experience} />
         ))}
       </div>
-    </div>
+    </OnScroll>
   );
 };
 
 const SkillsSection = () => {
   return (
-    <div className="flex flex-col">
+    <OnScroll className="flex flex-col">
       <SectionTitle title="Compétences" />
 
       <div className="flex flex-col justify-center gap-6 md:flex-row md:flex-wrap">
@@ -150,7 +149,7 @@ const SkillsSection = () => {
           <SkillCard {...skill} />
         ))}
       </div>
-    </div>
+    </OnScroll>
   );
 };
 
