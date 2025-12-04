@@ -1,9 +1,10 @@
 import React from "react";
+import OnScroll from "../animations/on-scroll.animation";
 import { ProjectType } from "../types/project.type";
 
 const Project = (projectData: ProjectType) => {
     return (
-        <div className="card bg-primary card-shadow h-full">
+        <OnScroll className="card bg-primary card-shadow h-full">
             <div className="card-body py-6">
                 <h2 className="card-title flex flex-wrap items-baseline gap-1">
                     <span>{projectData.title}</span>
@@ -24,7 +25,7 @@ const Project = (projectData: ProjectType) => {
                         <img src="/logos/github.svg"></img>
                     </a>}
             </div>
-        </div>
+        </OnScroll>
     );
 };
 

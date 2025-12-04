@@ -1,5 +1,6 @@
 import React from "react";
 import ChangePage from "../animations/change-page.animation";
+import OnScroll from "../animations/on-scroll.animation";
 import Footer from "../components/layouts/footer.layout";
 import Header from "../components/layouts/header.layout";
 import Project from "../components/project.component";
@@ -37,11 +38,11 @@ const ProjectsPage = () => {
 const ProjectsSection = ({ title, projects }: { title: string, projects: [] }) => {
     return (
         <div className="flex flex-col gap-3">
-            <div>
+            <OnScroll>
                 <h1 className="text-center text-2xl font-bold uppercase w-full">{title}</h1>
                 <div className="divider my-0 mx-[30%]"></div>
-            </div>
-            <div className="flex flex-col md:grid md:grid-cols-[repeat(auto-fit,minmax(450px,1fr))] gap-3 px-2">
+            </OnScroll>
+            <div className="flex flex-col md:grid md:grid-cols-[repeat(auto-fit,minmax(450px,1fr))] gap-3 px-4">
                 {projects.map((project: ProjectType) => (
                     <Project {...project} />
                 ))}
