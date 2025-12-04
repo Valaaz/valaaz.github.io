@@ -63,13 +63,22 @@ const Presentation = () => {
         <div>
           <h1 className="text-5xl text-center font-bold">Développeur Frontend</h1>
           <div className="divider"></div>
-          <span className="flex justify-center text-rotate text-2xl w-full duration-6000 pointer-events-none">
-            <span>
-              <span>🌐 Web</span>
-              <span>📱 Mobile</span>
-              <span>💻 Logiciel</span>
+          <div className="flex flex-row justify-center w-full text-xl gap-2 md:text-2xl md:gap-3">
+            <span className="flex gap-1">
+              <span>🌐</span>
+              <span>Web</span>
             </span>
-          </span>
+            <span>-</span>
+            <span className="flex">
+              <span>📱</span>
+              <span>Mobile</span>
+            </span>
+            <span>-</span>
+            <span className="flex gap-1">
+              <span>💻</span>
+              <span>Logiciel</span>
+            </span>
+          </div>
         </div>
       </div>
     </OnScroll>
