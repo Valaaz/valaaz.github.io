@@ -19,15 +19,27 @@
         "link": "https://github.com/Valaaz/birthday-reminder"
     },
     {
-        "title": "Portfolio",
-        "description": "Refonte complète du portfolio pour le rendre plus moderne et esthétique.",
+        "title": "Portfolio actuel (deuxième refonte)",
+        "description": "Refonte complète de mon portfolio pour le rendre plus moderne et esthétique en utilisant des frameworks.",
+        "technologies": [
+            "GatsbyJS",
+            "DaisyUI",
+            "TailwindCSS",
+            "Motion"
+        ],
+        "team": 1,
+        "link": "https://github.com/Valaaz/valaaz.github.io"
+    },
+    {
+        "title": "Portfolio (ancienne version)",
+        "description": "Première refonte de mon portfolio pour le rendre plus attrayant et moderne.",
         "technologies": [
             "HTML",
             "CSS",
             "JavaScript"
         ],
         "team": 1,
-        "link": "https://github.com/Valaaz/valaaz.github.io"
+        "link": "https://github.com/Valaaz/valaaz.github.io/tree/former-version"
     },
     {
         "title": "Bot Discord",
