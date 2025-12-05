@@ -1,7 +1,7 @@
 @import 'tailwindcss';
 @plugin "daisyui";
 
-@source '../**/*.{js,jsx,ts,tsx}';
+@source './**/*.{js,jsx,ts,tsx}';
 
 @plugin "daisyui/theme" {
     name: "personal-theme";
